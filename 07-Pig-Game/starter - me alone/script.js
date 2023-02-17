@@ -27,6 +27,7 @@ const newBtnEventHandle = () => {
 const rollDiceEventHandler = () => {
   const number = randomRoll();
   console.log(number);
+  document.querySelector('img').src = `dice-${number}.png`;
   if (
     !player0.classList.contains('player--winner') &&
     !player1.classList.contains('player--winner')
