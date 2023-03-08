@@ -70,7 +70,42 @@ const currencies = new Map([
   ['EUR', 'Euro'],
   ['GBP', 'Pound sterling'],
 ]);
+currencies.forEach(function (value, key, map) {
+  console.log(`key : ${key}
+value: ${value}`);
+});
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300, [1, 2]];
+// movements.forEach(function (mov, i, arr) {
+//   console.log(mov);
+//   console.log(i);
+//   console.log(arr);
+// });
+
+// const obj = {
+//   d: {
+//     z: 'j',
+//     x: 'k',
+//   },
+// };
 
 /////////////////////////////////////////////////
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr.at(0));
+// console.log(arr.at(-1));
+// console.log(arr.slice(-1).concat(arr.splice(0, -1)));
+// console.log(arr);
+// console.log(arr.splice(-3, -1));
+// console.log(arr);
+// console.log(arr.splice(0, -2));
+// console.log(arr.slice(0, -1));
+// console.log(arr.entries());
+// for (const [i, j] of arr.entries()) {
+//   console.log(i, j);
+// }
+// for (const [index, item] of movements.entries()) {
+//   console.log(`index is ${index} and item is ${item}`);
+// }
+// for (const [key, { z, x }] of Object.entries(obj)) {
+//   console.log(key, z, x);
+// }
