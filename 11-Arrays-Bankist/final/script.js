@@ -157,7 +157,7 @@ btnLogin.addEventListener('click', function (e) {
     containerApp.style.opacity = 100;
 
     // Clear input fields
-    inputLoginUsername.value = inputLoginPin.value = '';
+    inputLoginUsername.value = +inputLoginPin.value = '';
     inputLoginPin.blur();
 
     // Update UI
